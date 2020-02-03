@@ -8,6 +8,9 @@ import {
 import Structur from './Structur';
 import './App.css';
 import Booking from './Booking';
+import history from './img/ourHIstory.jpg';
+import elephant from './img/elephant.jpg';
+
 
 export default function App() {
   return (
@@ -15,12 +18,12 @@ export default function App() {
       <div className="App">
         <div className="menu-disposition">
           <div className="Row-First">
-            <Link style={{ textDecoration: 'none', color: 'white' }} to="/"><h2 className="margin-leftStyle text-shadow-pop-top">Home</h2></Link>
-            <Link style={{ textDecoration: 'none', color: 'white' }} to="/ourhistory"><h2 className="text-shadow-pop-top">Our history</h2></Link>
+            <Link style={{ textDecoration: 'none', color: 'white' }} to="/"><h2 className="margin-leftStyle text-shadow-pop-top responsive-menu">Home</h2></Link>
+            <Link style={{ textDecoration: 'none', color: 'white' }} to="/ourhistory"><h2 className="text-shadow-pop-top responsive-menu">Our history</h2></Link>
           </div>
           <div className="Row-Second">
-            <Link style={{ textDecoration: 'none', color: 'white' }} to="/reservation"><h2 className="margin-leftStyle text-shadow-pop-top">Booking</h2></Link>
-            <Link style={{ textDecoration: 'none', color: 'white' }} to="/tickets"><h2 className="text-shadow-pop-top">My tickets</h2></Link>
+            <Link style={{ textDecoration: 'none', color: 'white' }} to="/reservation"><h2 className="margin-leftStyle text-shadow-pop-top responsive-menu">Booking</h2></Link>
+            <Link style={{ textDecoration: 'none', color: 'white' }} to="/tickets"><h2 className="text-shadow-pop-top responsive-menu">My tickets</h2></Link>
           </div>
         </div>
         <Switch>
@@ -61,6 +64,32 @@ function Home() {
          odo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla p
          ariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
+      <img className="Our_history-image" src={history} alt="circus history" />
+      <div>
+      <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor
+         e magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm
+         odo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla p
+         ariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor
+         e magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm
+         odo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla p
+         ariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      </div>
+      <img className="Our_history-image" src={elephant} alt="elephant history" />
+      <div>
+      <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor
+         e magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm
+         odo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla p
+         ariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor
+         e magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm
+         odo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla p
+         ariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      </div>
     </div>
   );
 }
@@ -90,3 +119,4 @@ function Tickets() {
     </div>
   );
 }
+

@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Nazelle37530.",
+    "database": "WildCircus_development",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Nazelle37530.",
+    "database": "WildCircus_test",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "Nazelle37530.",
+    "database": "WildCircus_production",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}

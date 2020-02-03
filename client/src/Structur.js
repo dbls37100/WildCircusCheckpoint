@@ -3,7 +3,24 @@ import './Structur.css';
 import placeHolder from './img/150.png';
 import placeHolder2 from './img/350x150.png';
 
-function Structur() {
+
+class Structur extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showDialog: false,
+    };
+  }
+
+  handleClick = () => {
+    this.setState({ showDialog: true });
+  };
+
+  handleCloseClick = () => {
+    this.setState({ showDialog: false });
+  };
+
+  render() { 
   return (
     <div className="App">
       <main className="main-style">
@@ -18,15 +35,23 @@ function Structur() {
         </div>
         <div>
           <h2>Photos</h2>
-          <div className="Img--structure">
-            <img src={placeHolder} alt="funny images"></img>
-            <img src={placeHolder} alt="funny images"></img>
-            <img src={placeHolder} alt="funny images"></img>
-            <img src={placeHolder} alt="funny images"></img>
-            <img src={placeHolder} alt="funny images"></img>
-            <img src={placeHolder} alt="funny images"></img>
-            <img src={placeHolder} alt="funny images"></img>
-            <img src={placeHolder} alt="funny images"></img>
+          <div className="Img--structure1">
+            <div>
+              <img src={placeHolder} alt="funny images"></img>
+              <img src={placeHolder} alt="funny images"></img>
+            </div>
+            <div>
+              <img src={placeHolder} alt="funny images"></img>
+              <img src={placeHolder} alt="funny images"></img>
+            </div>
+            <div>
+              <img src={placeHolder} alt="funny images"></img>
+              <img src={placeHolder} alt="funny images"></img>
+            </div>
+            <div>
+              <img src={placeHolder} alt="funny images"></img>
+              <img src={placeHolder} alt="funny images"></img>
+            </div>
           </div>
         </div>
         <div>
@@ -43,19 +68,48 @@ function Structur() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
           </div>
           <div className="Img--structure">
-            <img src={placeHolder} alt="funny images"></img>
-            <img src={placeHolder} alt="funny images"></img>
-            <img src={placeHolder} alt="funny images"></img>
-            <img src={placeHolder} alt="funny images"></img>
-            <img src={placeHolder} alt="funny images"></img>
-            <img src={placeHolder} alt="funny images"></img>
-            <img src={placeHolder} alt="funny images"></img>
-            <img src={placeHolder} alt="funny images"></img>
+              <div>
+            <div className="card-Acts">
+              <img src={placeHolder} alt="funny images"></img>
+              <h3>Event Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+            <div className="card-Acts">
+              <img src={placeHolder} alt="funny images"></img>
+              <h3>Event Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+            </div>
+            <div>
+            <div className="card-Acts">
+              <img src={placeHolder} alt="funny images"></img>
+              <h3>Event Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+            <div className="card-Acts">
+              <img src={placeHolder} alt="funny images"></img>
+              <h3>Event Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+            </div>
           </div>
           </div>
+          <div className="contact--form">
+            <h2>Contact us</h2>
+          <div>
+                <i class="fas fa-envelope"></i>
+                  <form className="displaying-form">
+                    <h2>Contact information</h2>
+                    <input type="text" />
+                    <h2>Enter your message here.</h2>
+                    <input className="Big-input" type="text" />
+                  </form>
+            </div>
+            </div>
       </main>
     </div>
   );
+  }
 }
 
 export default Structur;
